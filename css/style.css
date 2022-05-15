@@ -1,0 +1,178 @@
+/* main color => #1e2233 */
+/* sacond color => ##ff5c55 */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1e2233;
+    height: 1000px;
+}
+
+.bg-light {
+    background-color: transparent !important;
+    font-weight: bold;
+}
+.navbar-light .navbar-brand{
+    color: #ff5c55;
+    font-size: 30px;
+}
+.navbar-light .navbar-brand span{
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #ff5c55;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+}
+
+.home{
+    margin-left: 540px;
+}
+
+
+.image{
+    background-image: url("../img/1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-color:#1e2233;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: -71px;
+}
+
+.image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    transition: 2s;
+}
+.image img:hover{
+    border: 6px solid #ff5c55;
+}
+.image .main{
+    text-align: center;
+}
+.image .main h1{
+    color: #ff5c55;
+    font-weight: bold;
+    font-size: 50px;
+}
+.image .main p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.about, .services , .skills{
+ /* height: 112vh; */
+ color: #858585;
+}
+.about img{
+    height: 700px;
+}
+.about h2, .services h2, .skills h2{
+    font-size: 40px;
+    line-height: 0.5;
+    color: white;
+}
+.about .top, .services .top{
+    font-size: 23px;
+    color: #ff5c55;
+}
+
+hr{
+    color: #ff5c55;
+    height: 4px !important;
+    width: 76px;
+    opacity: 1;
+}
+
+.about_info{
+    padding: 100px 40px;
+}
+
+.about.row {
+    --bs-gutter-x: 0;
+}
+
+.about .my_info{
+    border: 1px solid #ff5c55;
+    border-radius: 7px;
+    padding: 40px;
+}
+
+.about button, .contact_cols button{
+    background-color: #ff5c55;
+    color: white;
+    border: 1px solid #ff5c55;
+    border-radius: 4px;
+    height: 40px;
+    margin-top: 30px;
+    width: 150px;
+}
+
+.services, .contact{
+    background-color: #24273d;
+}
+.my_services ,.my_skills, .contact_me{
+    padding: 60px;
+}
+
+.services_cols .box, .contact_cols .box{
+    border: 1px solid #ff5c55;
+    border-radius: 7px;
+    padding: 40px;
+    margin-top: 60px;
+    margin-right: 30px;
+}
+.services_cols h5, .contact_cols h5{
+    color: white;
+}
+.services_cols img{
+    margin-bottom: 20px;
+}
+.skills textarea{
+    width: 361px;
+    height: 88px;
+}
+
+ol{
+    padding-left: 0;
+    color: white;
+}
+.progress-bar{
+    background-color: #ff5c55;
+}
+.contact_cols input{
+    width: 480px;
+}
+
+.contact_cols textarea {
+    width: 480px;
+}
+.contact_cols {
+    color: white;
+}
+
+@media only screen and (max-width: 1200px){
+    .home{
+        margin-left: 0;
+    }
+    .image{
+        margin-top: 0;
+    }
+    .skills textarea {
+        width: 244px;
+    }
+    .contact_cols input {
+        width: 251px;
+    }
+}
